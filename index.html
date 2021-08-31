@@ -1,115 +1,551 @@
+<!--Author: Template Stock
+Author URL: http://templatestock.co
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-22TQ7X9LXY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-22TQ7X9LXY');
-  </script>
-  <title>Kristina</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" href="/style.css">
-
-  <!-- import the webpage's javascript file -->
-  <script src="/script.js" defer></script>
-  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-22TQ7X9LXY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-22TQ7X9LXY');
-  </script>
-
+	<title>Kristina Yuchen Tian's Personal Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Onepage web" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/print.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+			});
+		});
+	</script>
 </head>
 
 <body>
-  <div class="parallex">
-    <nav class="top-nav">
-      <a href="index.html">Home</a>
-      <a href="resume.html">Intro</a>
-      <a href="https://github.com/acetyct">GitHub</a>
-      <a href="https://www.linkedin.com/in/tina-yuchen-tian/">LinkedIn</a>
-    </nav>
-  </div>
+	<div class="header" id="head">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.html"><img src="images/KYT.png" alt="" style="width:250px;height:20px;" /></a>
+				</div>
+				<div class="top-menu">
+					<span class="menu"> </span>
+					<ul>
+						<nav class="cl-effect-5">
+							<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+							<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
+							<li><a href="#projects" class="scroll"><span data-hover="projects"><span>projects</span></a></li>
+							<li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
+							<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+						</nav>
+					</ul>
+				</div>
+				<!--script-nav-->
+				<script>
+					$("span.menu").click(function () {
+						$(".top-menu ul").slideToggle("slow", function () {
+						});
+					});
+				</script>
+				<div class="clearfix"></div>
+			</div>
+			<div class="slogan" id="slogan">
+				<script>
+					var i = 0;
+					var txt = ' Computer Science \n Quant Finance \n Operations Research \n';
+					var speed = 50;
 
-  <div class="info">
+					function typeWriter() {
+						if (i < txt.length) {
+							if (txt.charAt(i) == "\n") {
+								document.getElementById("slogan").innerHTML += ("<br>");
+							}
+							else {
+								document.getElementById("slogan").innerHTML += txt.charAt(i).fontcolor("white");
+							}
+							i++;
+							setTimeout(typeWriter, speed);
+						}
+						return "";
+					}
+					document.getElementById("slogan").innerHTML = window.typeWriter();
+				</script>
+				<span class="blinking-cursor">_</span>
+			</div>
 
-    <div class="caption">
+		</div>
+	</div>
+	<div class="content">
+		<div class="about-section" id="about" id="about">
+			<div class="container">
+				<div class="about-header">
+					<h3>about</h3>
 
-      <span class="name">Kristina &nbsp TIAN</span>
-      <div class="pic">
+					<div class="about-text">
+						<p>
 
-      </div>
-      <div class="introduction">
-        <p style="font-family:'verdana';font-size:13px;">
+							Welcome to my Personal Website! <br><br>
+							I'm a Financial Engineering master student at Columbia University. Guided by my strong passion in Quant
+							Finance, I've done many projects and internships related to this field. Details are mentioned in the next
+							section. <br>
+							Previously, I'm an undergraduate at Cornell University, majoring in Computer Science
+							and minoring in Operations Research and Management Science. I graduated in three years with latin
+							honors.<br>
+							I'm interested in dealing with quantitative and technical issues.
+							Applying quantitative methods to gain insights from financial markets always excites me.<br> <br>
+							<br>
+							I was a researcher of Quant Finance and NLP.
+							<br>
+							Previously, I worked as a TA/consultant for Functional Programming and for Python programming.<br>
 
-          Welcome to my Personal Website! <br><br>
-          I'm a Financial Engineering master student at Columbia University. Guided by my strong passion in Quant
-          Finance, I've done many projects and internships related to this field. Details are mentioned in intro
-          section. <br>
-          Previously, I'm an undergraduate at Cornell University, majoring in Computer Science
-          and minoring in Operations Research and Management Science. I graduated in three years with latin honors.<br>
-          I'm interested in dealing with quantitative and technical issues.
-          Applying quantitative methods to gain insights from financial markets always excites me.<br> <br>
-          <br>
-          I'm currently interning at TheStock.AI and building a reinforcement learning trading bot using deep Q
-          learning.<br>
-          I'm currently an undregraduate researcher of Quant Finance and NLP.
-          <br>
-          Previously, I worked as a consultant for Functional Programming and for Python programming.<br>
-          ***I'm currently re-writing my personal website using javascript. The approximate launch time of the (fancy)
-          version is next week. The new version takes more time than I expected, but it will be **a lot** fancier than
-          the current version, I promise :)<br>
-        </p>
+						</p>
 
-      </div>
+					</div>
 
-    </div>
-    <div class="past_projects">
-      <p style="font-family:'verdana'; font-size: 13px">
-        Past Projects Outline(details click "Intro" button):
-      </p>
-      <p style="font-family:'verdana'; font-size: 12px">
-        <br>
-        Reinforcement Learning Trading Bot <br>
-        Optimal Intervention<br>
-        Weather Forecasting using Neural Networks<br>
-        Link: https://github.com/yifz98/Regional-Climate-Forecast-with-ANN<br>
-        Cryptocurrency Portfolio Optimization with Markowitz Theory and Wyckoff’s Market Cycle<br>
-        Link: https://github.com/acetyct/Cryptocurrency-Portfolio-Optimization<br>
-        Real-Fake News Classification<br>
-        Sentiment Analysis using FFNN and RNN <br>
-        Answerability prediction using LSTM and BERT <br>
-        Lord of Feuds Game<br>
-        &nbsp; I developed the Game Engine that handles the whole game, player and places modules, and 2 random lottery
-        systems to add more uncertainties to the game. <br>Just like life, the game is also full of unexpected things
-        ;)<br>
-        Machine Learning and Data Analysis:
-        Time-Dependency of YouTube Video Characteristics<br>
-        Audio-Text Converter (uses Google Cloud Speech API)<br>
-        RISC-V Pipelined Processor<br>
-      </p>
+					<div class="clearfix"></div>
+				</div>
 
+				<!--
+				<div class="about-sectiongrids">
+					<div class="col-md-6 about-leftgrid">
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Python</h4>
+								</div>
+								<div class="percentage">
+									<p></p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:98%"> </div>
+								
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Ui/Ux</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Logo Design</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Html/Css</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
 
-    </div>
+					</div>
+					<div class="col-md-6 about-rightgrid">
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>web design</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>branding</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Photography</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+						<div class="polls">
+							<div class="poll">
+								<div class="poll-desc">
+									<h4>Jquery</h4>
+								</div>
+								<div class="percentage">
+									<p>75%</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="skills">
+								<div style="width:75%"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			-->
+				<div class="arrow1">
+					<a href="#work" class="scroll"><img src="images/arrow1.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+		<!-- about-section-ends -->
+		<div class="works-section" id="work" id="work">
+			<div class="works-header">
+				<h3>works</h3>
+				<p> Optimal Intervention<br>
+					Reinforcement Learning Trading Bot with NLP components<br>
+					Weather Forecasting using Neural Networks<br>
+					Link: https://github.com/yifz98/Regional-Climate-Forecast-with-ANN<br>
+					Cryptocurrency Portfolio Optimization with Markowitz Theory and Wyckoff’s Market Cycle<br>
+					Link: https://github.com/acetyct/Cryptocurrency-Portfolio-Optimization<br>
+					Real-Fake News Classification<br>
+					Sentiment Analysis using FFNN and RNN <br>
+					Answerability prediction using LSTM and BERT <br>
+					Lord of Feuds Game<br>
+					&nbsp; I developed the Game Engine that handles the whole game, player and places modules, and 2 random
+					lottery
+					systems to add more uncertainties to the game. Just like life, the game is also full of unexpected things
+					;) <br>
+					Time-Dependency of YouTube Video Characteristics<br>
+					Audio-Text Converter (uses Google Cloud Speech API)<br>
+					RISC-V Pipelined Processor<br></p>
+			</div>
+			<!-- 
+			<div class="portfolio-section-bottom-row" id="portfolio">
+				<div class="container">
 
+					<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$('#horizontalTab').easyResponsiveTabs({
+								type: 'default', //Types: default, vertical, accordion           
+								width: 'auto', //auto or any width like 600px
+								fit: true   // 100% fit in a container
+							});
+						});
 
+					</script>
+					<link rel="stylesheet" href="css/swipebox.css">
+					<script src="js/jquery.swipebox.min.js"></script>
+					<script type="text/javascript">
+						jQuery(function ($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+				-->
+			<!-- Portfolio Ends Here -->
+			<!---
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Branding</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Print</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Web design</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>Photography</span></li>
+						<div class="clearfix"></div>
+					</ul>
+					<div id="portfoliolist">
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="tab_img">
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-1.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-1.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-2.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-2.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-3.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-3.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-4.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-4.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-5.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-5.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-6.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-6.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-7.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-7.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-8.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-8.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
 
-  </div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="tab_img">
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-5.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-5.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-6.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-6.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-7.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-7.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-8.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-8.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+
+								<div class="tab_img">
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-2.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-2.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-3.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-3.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-4.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-4.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="tab_img">
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-1.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-1.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-2.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-2.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
+								<div class="tab_img">
+									<div class="col-md-3 img-top grid_box">
+										<a href="images/pic-1.jpg" class="swipebox" title="Image Title">
+											<img src="images/pic-1.jpg" class="img-responsive" alt="">
+											<span class="zoom-icon"></span>
+										</a>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		-->
+			<div class="arrow">
+				<a href="#services" class="scroll"><img src="images/arrow.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- portfolio-section-ends -->
+
+	<!--
+	<div class="services-section" id="services">
+		<div class="container">
+			<div class="services-header">
+				<h3>services</h3>
+				<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+					sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+					odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio
+					tincidunt auctor a ornare odio. </p>
+			</div>
+			<div class="services-sectiongrids">
+				<div class="col-md-4 services-grid">
+					<img src="images/img1.png" alt="" />
+					<h4>webdesign</h4>
+					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img2.png" alt="" />
+					<h4>print design</h4>
+					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="col-md-4 services-grid">
+					<img src="images/img3.png" alt="" />
+					<h4>web development</h4>
+					<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+				</div>
+				<div class="clearfix"></div>
+				<div class="arrow1">
+					<a href="#contact" class="scroll"><img src="images/arrow1.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<!-- services-section-ends -->
+	</div>
+	<div class="footer-section" id="contact" id="contact">
+		<div class="container">
+			<div class="contact-header">
+				<h3> contact</h3>
+				<p>Feel free to check out these websites or contact me directly through email!</p>
+				<a href="index2.html">Home</a>
+				<a href="https://github.com/acetyct">GitHub</a>
+				<a href="https://www.linkedin.com/in/tina-yuchen-tian/">LinkedIn</a>
+
+			</div>
+			<div class="social-icon">
+			</div>
+			<div class="contact">
+				<!--
+				<form>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value=" name" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = ' name';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="email" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'email';}">
+					</div>
+					<div class="col-md-4 contactgrid">
+						<input type="text" class="text" value="phone" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'phone';}">
+					</div>
+					<div class="col-md-8 contactgrid1">
+						<textarea onfocus="if(this.value == 'Your Message') this.value='';"
+							onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
+					</div>
+					<div class="col-md-4 contactgrid2">
+						<input type="submit" value="[send message]">
+					</div>
+					<div class="clearfix"></div>
+				</form>
+			-->
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function () {
+					/*
+					var defaults = {
+							containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+					*/
+
+					$().UItoTop({ easingType: 'easeOutQuart' });
+
+				});
+			</script>
+			<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+
+	</div>
+	</div>
 
 
 </body>
